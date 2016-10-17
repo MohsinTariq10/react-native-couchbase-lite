@@ -391,7 +391,7 @@ this.database.getDesignDocument('my_design_doc')
 Example: this will delete revision _1_ of the the design document called _my_design_doc_ (created above)
 ```js
 let rev = 1;// must query the db to get this value
-this.database.getDesignDocument('my_design_doc', rev)
+this.database.deleteDesignDocument('my_design_doc', rev)
   then((res) => {
     console.log("deleted design document", res);
   });
